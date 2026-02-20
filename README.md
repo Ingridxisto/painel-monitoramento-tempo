@@ -1,9 +1,7 @@
-# 🌦️ Captador de Temperatura por Cidade — Python
+# 🌦️ Painel de Monitoramento do Tempo — Python
 
 ## 📖 Descrição
-Aplicação desenvolvida em **Python** que permite consultar informações climáticas de **qualquer cidade**, utilizando consumo de **API REST**, interface gráfica com **Tkinter** e persistência de dados em **planilha Excel**.
-
-O projeto simula um cenário real de automação, utilizando integração direta com API (em vez de scraping), garantindo **maior confiabilidade, segurança e escalabilidade**, além do uso de variáveis de ambiente para proteção de credenciais sensíveis.
+Aplicação desenvolvida em Python para consulta do tempo em tempo real, com integração via API e geração automática de relatórios em Excel.
 
 ---
 
@@ -107,17 +105,10 @@ A aplicação possui uma interface simples e intuitiva, permitindo que o usuári
 
 ---
 
-## 🔮 Possíveis Melhorias Futuras
+## 🔄 Versões do Projeto
 
-- Geração de gráficos de histórico climático
-
-- Integração com banco de dados
-
-- Uso de IA para previsões ou insights
-
-- Interface mais personalizada (CustomTkinter ou Web)
-
-- Deploy da aplicação
+- v1.0 – Interface com Tkinter
+- v2.0 – Interface com Streamlit (em desenvolvimento)
 
 ---
 
