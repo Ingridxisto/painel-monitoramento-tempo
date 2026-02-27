@@ -1,3 +1,16 @@
+# Ambiente virtual
+venv/
 .env
+
+# Streamlit secrets
+.streamlit/secrets.toml
+
+# Arquivos Python compilados
 __pycache__/
 *.pyc
+
+# Arquivos de sistema
+.DS_Store
+
+# Dados locais
+data/dados_climaticos.xlsx
