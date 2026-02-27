@@ -1,9 +1,7 @@
-# 🌦️ Captador de Temperatura por Cidade — Python
+# 🌦️ Painel de Monitoramento do Tempo — Python
 
 ## 📖 Descrição
-Aplicação desenvolvida em **Python** que permite consultar informações climáticas de **qualquer cidade**, utilizando consumo de **API REST**, interface gráfica com **Tkinter** e persistência de dados em **planilha Excel**.
-
-O projeto simula um cenário real de automação, substituindo técnicas frágeis de scraping por uma integração direta com API, garantindo maior confiabilidade e escalabilidade.
+Aplicação desenvolvida em Python para consulta do tempo em tempo real, com integração via API e geração automática de relatórios em Excel.
 
 ---
 
@@ -11,7 +9,8 @@ O projeto simula um cenário real de automação, substituindo técnicas frágei
 - Praticar consumo de APIs REST em Python  
 - Desenvolver uma interface gráfica simples e funcional  
 - Armazenar dados históricos de forma estruturada  
-- Aplicar boas práticas de automação e tratamento de erros  
+- Aplicar boas práticas de automação e tratamento de erros
+- Evitar vazamento de credenciais sensíveis (API Key) 
 
 ---
 
@@ -25,6 +24,7 @@ O projeto simula um cenário real de automação, substituindo técnicas frágei
 - 💾 Salvamento automático dos dados em Excel
 - 🕒 Registro de data e hora da consulta
 - 📊 Criação dinâmica de arquivo e planilha, caso não existam
+- 🔐 Uso de variáveis de ambiente para proteger a API Key
 
 ---
 
@@ -33,14 +33,16 @@ O projeto simula um cenário real de automação, substituindo técnicas frágei
 - Tkinter  
 - Requests  
 - OpenWeatherMap API  
-- OpenPyXL  
+- OpenPyXL
+- Python-dotenv
 
 ---
 
 ## 🧩 Arquitetura do Projeto
 - Interface gráfica responsável pela interação com o usuário  
 - Função dedicada para consumo da API de clima  
-- Função separada para persistência de dados  
+- Função separada para persistência de dados
+- Uso de variáveis de ambiente (.env) para credenciais sensíveis  
 - Tratamento de erros para cidades inválidas e arquivos inexistentes  
 
 ---
@@ -55,7 +57,7 @@ cd Captador-de-Temperatura
 
 ### 2️⃣ Instale as dependências
 ```bash
-pip install requests openpyxl
+pip install requests openpyxl python-dotenv
 ```
 
 ### 3️⃣ Configure a API Key
@@ -63,10 +65,13 @@ pip install requests openpyxl
 Crie uma conta gratuita em:
 https://openweathermap.org/api
 
-No código, substitua:
+Crie um arquivo .env na raiz do projeto com o conteúdo:
+
 ```bash
-API_KEY = "SUA_CHAVE_API"
+OPENWEATHER_API_KEY=SUA_CHAVE_API_AQUI
 ```
+
+⚠️ O arquivo .env não é versionado e está incluído no .gitignore por segurança.
 
 ### 4️⃣ Execute o projeto
 ```bash
@@ -94,17 +99,16 @@ A aplicação possui uma interface simples e intuitiva, permitindo que o usuári
 
 - Organização e modularização de código
 
+- Uso de variáveis de ambiente para segurança
+
+- Organização e modularização de código
+
 ---
 
-## 🔮 Possíveis Melhorias Futuras
+## 🔄 Versões do Projeto
 
-- Geração de gráficos de histórico climático
-
-- Integração com banco de dados
-
-- Uso de IA para previsões ou insights
-
-- Internacionalização da aplicação
+- v1.0 – Interface com Tkinter
+- v2.0 – Interface com Streamlit (em desenvolvimento)
 
 ---
 
