@@ -3,7 +3,7 @@ from openpyxl import load_workbook, Workbook
 from openpyxl.styles import Border, Side, PatternFill
 from datetime import datetime
 
-ARQUIVO_EXCEL = "data/dados_climaticos.xlsx"
+ARQUIVO_EXCEL = "dados_clima.xlsx"
 
 
 def salvar_dados(cidade, temperatura, umidade, ceu):
