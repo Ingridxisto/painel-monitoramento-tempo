@@ -3,8 +3,8 @@ from datetime import datetime
 import pandas as pd
 import os
 
-from services.clima_service import buscar_clima
-from services.excel_service import salvar_dados
+from app.services.clima_service import buscar_clima
+from app.services.excel_service import salvar_dados
 
 ARQUIVO_EXCEL = "data/dados_climaticos.xlsx"
 
