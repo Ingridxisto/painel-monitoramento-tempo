@@ -140,11 +140,14 @@ streamlit run app_streamlit.py
 ## 👩‍💻 Autora
 
 **Ingrid Xisto**
+
 Estudante de Análise e Desenvolvimento de Sistemas
+
 Foco em Python, Automação, APIs e Inteligência Artificial
 
 🔗 GitHub: https://github.com/Ingridxisto
 
 🔗 LinkedIn: https://www.linkedin.com/in/ingridxisto/
+
 
 ⭐ Se você gostou do projeto, deixe uma estrela no repositório!
