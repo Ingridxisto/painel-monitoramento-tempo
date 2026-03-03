@@ -7,7 +7,10 @@ load_dotenv()
 
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
-API_KEY = os.getenv("OPENWEATHER_API_KEY") or st.secrets.get("OPENWEATHER_API_KEY")
+if "OPENWEATHER_API_KEY" in st.secrets:
+    API_KEY = st.secrets["OPENWEATHER_API_KEY"]
+else:
+    API_KEY = os.getenv("OPENWEATHER_API_KEY")
 
 
 def buscar_clima(cidade: str):
