@@ -117,6 +117,8 @@ OPENWEATHER_API_KEY=SUA_CHAVE_AQUI
 streamlit run app_streamlit.py
 ```
 
+---
+
 ## 📚 Aprendizados
 
 ✔ Consumo de APIs REST
@@ -132,6 +134,8 @@ streamlit run app_streamlit.py
 ✔ Separação entre backend e interface
 
 ✔ Proteção de credenciais sensíveis
+
+---
 
 ## 👩‍💻 Autora
 
