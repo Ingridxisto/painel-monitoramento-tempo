@@ -119,6 +119,28 @@ streamlit run app_streamlit.py
 
 ---
 
+## 🖼️ Interface da Aplicação
+
+### 🌐 Versão Web - Streamlit
+
+<p align="center">
+  <img src="screenshots/tela-inicial.png" width="800">
+</p>
+
+<p align="center">
+  <img src="screenshots/dados-tempo.png" width="800">
+</p>
+
+<p align="center">
+  <img src="screenshots/tabela-historico.png" width="800">
+</p>
+
+<p align="center">
+  <img src="screenshots/tabela-evolucao.png" width="800">
+</p>
+
+---
+
 ## 📚 Aprendizados
 
 ✔ Consumo de APIs REST
