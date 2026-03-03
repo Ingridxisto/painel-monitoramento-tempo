@@ -120,11 +120,17 @@ streamlit run app_streamlit.py
 ## 📚 Aprendizados
 
 ✔ Consumo de APIs REST
+
 ✔ Deploy de aplicação Python
+
 ✔ Persistência de dados em Excel
+
 ✔ Tratamento de erros em ambiente cloud
+
 ✔ Organização e modularização de código
+
 ✔ Separação entre backend e interface
+
 ✔ Proteção de credenciais sensíveis
 
 ## 👩‍💻 Autora
