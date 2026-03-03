@@ -6,7 +6,7 @@ import os
 from app.services.clima_service import buscar_clima
 from app.services.excel_service import salvar_dados
 
-ARQUIVO_EXCEL = "data/dados_climaticos.xlsx"
+ARQUIVO_EXCEL = "dados_clima.xlsx"
 
 
 def iniciar_app():
@@ -124,25 +124,27 @@ def iniciar_app():
     # 🔹 FECHA O CARD
     st.markdown('</div>', unsafe_allow_html=True)
 
-    # 📁 HISTÓRICO FORA DO CARD
-    if os.path.exists(ARQUIVO_EXCEL):
+    # 📁 HISTÓRICO
+    try:
+        df = pd.read_excel(ARQUIVO_EXCEL)
 
         st.markdown(
             "<h2 style='color: white;'>📁 Histórico de Consultas</h2>",
             unsafe_allow_html=True
         )
 
-        df = pd.read_excel(ARQUIVO_EXCEL)
-
         st.dataframe(df, use_container_width=True)
 
-        # 📈 Gráfico automático
         if "Temperatura (°C)" in df.columns:
             st.markdown(
                 "<h2 style='color: white;'>📈 Evolução da Temperatura</h2>",
                 unsafe_allow_html=True
             )
             st.line_chart(df["Temperatura (°C)"])
+
+    except FileNotFoundError:
+        pass
+
 
 
 if __name__ == "__main__":
