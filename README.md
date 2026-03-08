@@ -93,7 +93,7 @@ Aplicação publicada na **Streamlit Cloud**:
 ### 1️⃣ Clone o repositório
 
 ```bash
-git clone https://github.com/Ingridxisto/painel-monitoramento-tempo
+git clone https://github.com/Ingridxisto/painel-monitoramento-tempo.git
 cd painel-monitoramento-tempo
 ```
 
