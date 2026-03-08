@@ -93,8 +93,8 @@ Aplicação publicada na **Streamlit Cloud**:
 ### 1️⃣ Clone o repositório
 
 ```bash
-git clone https://github.com/Ingridxisto/Captador-de-Temperatura.git
-cd Captador-de-Temperatura
+git clone https://github.com/Ingridxisto/painel-monitoramento-tempo
+cd painel-monitoramento-tempo
 ```
 
 ### 2️⃣ Instale as dependências
